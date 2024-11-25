@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body {
+        font-family:sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+       color: #f4f4f4;
+       background-color: black;
+
+    }
+    
+    /* Header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #222;
+        color: #fff;
+        padding: 10px 20px;
+        font-family: serif;
+    }
+    
+    header .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        font-family: serif;
+    }
+    
+    header nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header nav ul li {
+        margin-left: 20px;
+    }
+    
+    header nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s;
+    }
+    
+    header nav ul li a:hover {
+        color: #00bcd4;
+    }
+    
+    /* Hero Section */
+    .hero {
+        text-align: center;
+        padding: 50px 20px;
+        background:#008c9e;
+        font-family: sans-serif;
+    }
+    
+    .hero h1 {
+        font-size: 2.5em;
+        color: white;
+    }
+    
+    /* About & Services Sections */
+    section {
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    section h2 {
+        font-size: 2em;
+        color: wheat;
+        margin-bottom: 10px;
+    }
+    
+    .service {
+        margin-bottom: 20px;
+    }
+    
+    /* Contact Section */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-family: monospace;
+    }
+    
+    form input, form textarea, form button {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    form button {
+        background-color: #00bcd4;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    
+    }
+    
+    form button:hover {
+        background-color: #008c9e;
+    }
+    
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 10px;
+        background: #222;
+        color: #fff;
+    }
+    img{
+        height: 150px;
+        width: 150px;
+    }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybratech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Cybratech</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="C:\Adhya2024\frontend\static\logo.jpeg">
+        <h1>Welcome to Cybratech</h1>
+        <p>Your gateway to innovative tech solutions.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Cybratech, we specialize in delivering cutting-edge technology solutions tailored to your needs. Our team of experts is dedicated to driving your success in the digital age.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Web Development</h3>
+            <p>Creating stunning, responsive websites that represent your brand.</p>
+        </div>
+        <div class="service">
+            <h3>Mobile App Development</h3>
+            <p>Building seamless apps to enhance user experiences.</p>
+        </div>
+        <div class="service">
+            <h3>Cybersecurity</h3>
+            <p>Protecting your digital assets with state-of-the-art security solutions.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cybratech. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
